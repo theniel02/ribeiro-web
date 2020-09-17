@@ -1,6 +1,9 @@
 <template>
   <div class="page">
-        Home
+    <div>
+      home
+    </div>
+    
   </div>
 </template>
 
@@ -12,6 +15,7 @@ export default {
 
 <style>
 .login {
+  background: #202020;
   height: 100%;
   width: 100%;
   display: flex;

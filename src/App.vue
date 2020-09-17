@@ -1,13 +1,35 @@
 <template>
   <div id="app">
-    <router-view /> 
+    <div class="top-bar">
+        <TopBar :page=this.currentPage />
+    </div>
+    <div>
+      <div class="side-menu">
+        <SideMenu />
+      </div>
+      <div class="content">
+        <router-view /> 
+        
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import SideMenu from './components/SideMenu'
+import TopBar from './components/TopBar'
 
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    SideMenu, TopBar
+  },
+  data() {
+    return {
+      isLogaded: false,
+      currentPage: 'Login'
+    }
+  }
 }
 </script>
 
@@ -27,15 +49,18 @@ html, body {
 
 
 #app {
+  background: #000;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ededed;
+}
+
+.top-bar {
+  position: fixed;
+  
 }
 </style>

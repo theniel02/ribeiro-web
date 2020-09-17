@@ -1,0 +1,45 @@
+
+
+/*
+Vue.mixin({
+  data: () => {
+    return {
+      store: [{}]
+    }
+  },
+  
+    createStore: (object) => {
+          this.store.push(object)
+    },
+    getStore: (component, getModel = 0) => {
+
+      //Find the index into the store
+      let index = this.store.findIndex(c => c.component == component);
+
+      //If component do not exists in the store
+      if(index === (-1)){
+        console.error("Component do not exists in the store!")
+        return
+      }
+
+      //Get the store
+      let store = this.store[index];
+
+      if(getModel == 0){
+        delete store.component
+        return store;
+      } else {
+        return store;
+      }
+    },
+    //updateStore: (component, object) => {
+      //let compStore = this.getStore(component ,1);
+      //let proprietisInCompStore = Object.keys(comp);
+      //let namberOfProprietisInCompStore = proprietisInComp.length;
+
+      //let proprietisInObject = Object.keys(object);
+      //let namberOfProprietisInObject = proprietisInComp.length;
+    //}
+  }
+})
+*/
