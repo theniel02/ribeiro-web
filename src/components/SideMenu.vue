@@ -6,12 +6,11 @@
             </b-button>
 
       </div>
-    <b-sidebar id="sidebar-menu" bg-variant="dark" shadow>
+    <b-sidebar id="sidebar-menu" title="Novo" bg-variant="dark" shadow>
       <div class="menu">
         <b-list-group class="menu">
-            <b-list-group-item to="#some-link">Corridas</b-list-group-item>
+            <b-list-group-item to="#some-link">Solicitar Corrida</b-list-group-item>
             <b-list-group-item to="#" bg-variant="dark">Mensagens</b-list-group-item>
-            <b-list-group-item to="#" bg-variant="dark">Clientes</b-list-group-item>
             <b-list-group-item to="#foobar" bg-variant="dark" >Relatórios</b-list-group-item>
         </b-list-group>
 </div>
@@ -20,6 +19,14 @@
 </template>
 
 <style scoped>
+    .b-sidebar-header{
+        display: flex;
+        color: #fff;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        text-align: right;
+    }
     .toggle-menu{
         display: flex;
         align-items: center;
@@ -27,7 +34,7 @@
         z-index: 99999;
         position: absolute;
         top: 6px;
-        left: 14px
+        left: 6px
     }
 
     .icon{

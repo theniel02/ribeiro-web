@@ -21,6 +21,8 @@ export default {
 
 <style>
 .page {
+
+  flex-direction: column;
   height: 100%;
   width: 100%;
   display: flex;
