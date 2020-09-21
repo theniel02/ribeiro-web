@@ -1,16 +1,22 @@
 <template>
   <div class="top-bar" variant="danger">
     <div class="title">
-      {{ this.page }}
+      {{ this.currentPage }}
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
-  props: [
-    'page'
-  ]
+  
+  computed:{
+    ...mapState ({
+      currentPage: state => state.currentPage
+    })
+  }
+
 }
 </script>
 

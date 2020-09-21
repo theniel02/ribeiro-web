@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div>
-      home
+      MyData
     </div>
     
   </div>

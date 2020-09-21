@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div>
-      home
+      Order
     </div>
     
   </div>
